@@ -34,7 +34,6 @@ const skills = [
 
 function App() {
   const [block, setBlock] = React.useState<Blocks>(Blocks.EXPERIENCE);
-  const [progress, setProgress] = React.useState(skills.map(() => 0));
   const { toggleLanguage } = useLanguage();
   const { t } = useTranslation();
 
@@ -46,14 +45,6 @@ function App() {
     { block: Blocks.ABOUT, label: t("profile"), icon: <PersonStanding color="white" width={20} height={20} /> },
   ];
   
-
-  React.useEffect(() => {
-    const timeout = setTimeout(() => {
-      setProgress(skills.map((skill) => skill.percentage));
-    }, 500);
-
-    return () => clearTimeout(timeout);
-  }, []);
 
   const handleClick = (block: Blocks) => {
     if (!block) return;

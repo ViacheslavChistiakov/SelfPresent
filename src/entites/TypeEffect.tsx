@@ -1,6 +1,6 @@
 import { TypeAnimation } from 'react-type-animation';
 import i18n from '../i18n';
-import { useLanguage } from '../LanguageContext';
+
 
 
 interface TypeEffectProps {
@@ -8,7 +8,6 @@ interface TypeEffectProps {
 }
 
 const TypeEffect = ({ sequence }: TypeEffectProps) => {  
-  const { language } = useLanguage();  
 
 
   const translate = (key: string) => {

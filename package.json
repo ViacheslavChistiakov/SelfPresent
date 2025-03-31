@@ -1,11 +1,13 @@
 {
   "name": "cv-project",
+  "homepage": " https://viacheslavchistiakov.github.io/SelfPresent/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
