@@ -5,6 +5,14 @@
   text-align: center;
 }
 
+
+
+
+button {
+  pointer-events: all; 
+  touch-action: manipulation;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -39,4 +47,22 @@
 
 .read-the-docs {
   color: #888;
+}
+
+
+
+.swiper-wrapper {
+  display: block;
+  align-items: center;
+  justify-items: center;
+}
+
+.swiper-slide {
+  width: 100% !important;  
+  margin-right: 0 !important; 
+  margin: auto !important;
+  align-items: center !important;
+  padding: 10px !important;
+  display: flex;
+  flex-direction: row;
 }
