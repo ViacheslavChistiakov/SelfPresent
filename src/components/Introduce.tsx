@@ -37,9 +37,9 @@ const Introduce: React.FC = () => {
                     </div>
                 </div>
               </div>
-              <button className="w-full h-20 bg-green-800 rounded-3xl shadow-lg transition-all duration-300 hover:bg-green-500 hover:border-green-400 relative flex items-center justify-center text-center max-sm:rounded-full w-[10] h-[10] ">
+              <button className="w-full h-20 bg-green-800 rounded-3xl shadow-lg transition-all duration-300 hover:bg-green-500 hover:border-green-400 relative flex items-center justify-center text-center max-sm:rounded-full w-full h-[4rem] ">
                   <Linkedin color='white' />
-                  <a href="https://www.linkedin.com/in/vycheslav-chistiakov-045228265/" className="text-white pl-5 text-lg text-center  uppercase lg:text-sm md:text-sm max-sm:hidden">{t("Connect with me")}</a>
+                  <a href="https://www.linkedin.com/in/vycheslav-chistiakov-045228265/" className="text-white pl-5 text-lg text-center  uppercase lg:text-sm md:text-sm">{t("Connect with me")}</a>
                 </button>
             </div>
             <div className="w-full md:w-[50%] flex flex-col h-auto max-sm:w-full">
