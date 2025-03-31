@@ -41,6 +41,3 @@ const TypeEffect = ({ sequence }: TypeEffectProps) => {
 };
 
 export default TypeEffect;
-
-
-
