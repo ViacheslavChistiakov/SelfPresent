@@ -79,7 +79,7 @@ const Skills: React.FC = () => {
     setActiveSlide(swiper.realIndex); 
   };
   return (
-    <div className="w-full lg:w-[53%] h-[10%] mx-auto flex flex-col relative right-35 lg:w-[30%] left-3 max-sm:w-full flex justify-center">
+    <div className="w-full lg:w-[53%] h-[10%] mx-auto flex flex-col relative right-35 lg:w-[30%] left-1 max-sm:w-full flex mx-auto items-center justify-center mr-20">
       <div className="w-full  flex flex-col  bg-zinc-900 rounded-[10%] p-5 gap-4">
         <div className="w-full flex flex-row gap-5 justify-center items-center">
           <FlaskConical color="white" />
