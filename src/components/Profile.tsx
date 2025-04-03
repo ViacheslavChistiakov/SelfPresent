@@ -5,15 +5,15 @@ import { useTranslation } from 'react-i18next';
 const Profile: React.FC = () => {
 const { t } = useTranslation();
   return (
-    <div className="w-full lg:w-full h-[10%] mx-auto flex flex-col relative right-35 lg:w-[30%] left-1 max-sm:w-full flex justify-center">
-    <div className="w-full  flex flex-col bg-zinc-900 rounded-[10%] p-5 gap-4">
+    <div className="w-full  lg:w-full h-[10%]  mx-auto flex grow-1 rounded-[10%] flex-col relative right-35 lg:w-[30%] left-1 max-sm:w-full flex justify-center">
+    <div className="w-full  flex flex-col bg-zinc-900 rounded-[10%] p-7 gap-8">
         <div className="w-full md:w-full  flex flex-row gap-5 justify-center items-center">
         <PersonStanding color="white" width={20} height={20} />
           <h1 className="text-white text-lg">{t("Profile")}</h1>
         </div>
-        <div className="w-full h-auto pt-10 flex flex-col md:flex-col justify-between max-sm:flex-col xs:flex-col">
+        <div className="w-full h-auto pt-8 flex flex-col md:flex-col justify-between max-sm:flex-col xs:flex-col">
         <h1 className="text-white text-start text-3xl"><span className="text-blue-500">{t("About")}</span> {t("me")}</h1>
-        <p className="text-white text-lg pt-5 text-start max-sm:text-sm">
+        <p className="text-white text-md pt-7 text-start max-sm:text-sm">
         {t("part-1")} <span className="text-blue-500">HTML, CSS, JS, React, TypeScript</span> {t("part-2")} <span className="text-blue-500">back-end </span>{t("part-3")} <span className="text-blue-500">DevOps</span> {t("part-4")}
         </p>
         </div>

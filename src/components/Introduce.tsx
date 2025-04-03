@@ -8,8 +8,8 @@ const Introduce: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="w-full lg:w-full h-[10%] mx-auto flex flex-col relative right-35 lg:w-[30%] left-1 max-sm:w-full flex justify-center">
-    <div className="w-full  flex flex-col bg-zinc-900 rounded-[10%] p-5 gap-10">
+    <div className="w-full lg:w-full h-[10%] mx-auto flex rounded-[10%] flex flex-col relative right-35 lg:w-[30%] left-1 max-sm:w-full flex justify-center">
+    <div className="w-full  flex flex-col bg-zinc-900 rounded-[10%] p-5 gap-6">
         <div className="w-full md:w-[50%]  flex flex-row gap-5 justify-center items-center">
           <SquarePen color='white' />
           <h1 className="text-white text-lg">{t("introduce")}</h1>

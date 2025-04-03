@@ -79,13 +79,13 @@ const Skills: React.FC = () => {
     setActiveSlide(swiper.realIndex); 
   };
   return (
-    <div className="w-full lg:w-[53%] h-[10%] mx-auto flex flex-col relative right-35 lg:w-[30%] left-1 max-sm:w-full flex mx-auto items-center justify-center mr-20">
-      <div className="w-full  flex flex-col  bg-zinc-900 rounded-[10%] p-5 gap-4">
-        <div className="w-full flex flex-row gap-5 justify-center items-center">
+    <div className="w-full lg:w-full h-[10%]  mx-auto rounded-[10%] flex  flex-col relative   max-sm:w-full flex mx-auto items-center justify-center ">
+      <div className="w-full  flex flex-col  bg-zinc-900 rounded-[10%]  gap-8">
+        <div className="w-full flex pt-5 flex-row gap-5 justify-center items-center">
           <FlaskConical color="white" />
           <h1 className="text-white text-lg">{t("Skills")}</h1>
         </div>
-        <div className="flex justify-center items-center mt-4">
+        <div className="flex justify-center items-center mt-3">
         <button
             disabled={activeSlide === 0}
             onClick={handlePrev}

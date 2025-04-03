@@ -30,9 +30,9 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ skills, isActive }) => {
   }, [progress]);
 
   return (
-    <ul className="w-full p-10 grid grid-cols-3 justify-between gap-10 max-sm:grid-cols-2 gap-25">
+    <ul className="w-full p-10 grid grid-cols-3 justify-between  max-sm:grid-cols-2 gap-10">
       {skills.map((skill, index) => (
-        <li key={skill.name} className="flex flex-col h-auto items-center gap-2">
+        <li key={skill.name} className="flex flex-col h-auto items-center gap-3">
           <div className="relative w-[7rem] h-[7rem]">
             <CircularProgressbar
               value={progress[index]}
