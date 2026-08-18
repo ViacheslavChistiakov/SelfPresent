@@ -6,7 +6,7 @@ import ProgressBar from '../entites/ProgressBar';
 
 const skills = [
     { name: 'React', percentage: 100 },
-    { name: 'Next.js', percentage: 95 },
+    { name: 'Node.js', percentage: 95 },
     { name: 'TypeScript', percentage: 99 },
     { name: 'JavaScript', percentage: 100 },
     { name: 'HTML', percentage: 95 },
@@ -19,17 +19,24 @@ const { t } = useTranslation();
   return (
     <div className="w-[40%] h-full rounded-[10%] bg-zinc-900 mx-auto flex flex-col items-center justify-start lg:h-[10%] max-sm:w-full mx-auto flex justify-center">
     <div className="w-full flex flex-col items-center justify-center gap-4">
-      <img src={avatar} alt="avatar" className="w-42 h-42 rounded-full  mt-10" />
+      <div className="relative mt-10 group">
+        <div className="absolute -inset-1 rounded-full bg-gradient-to-tr from-green-400 via-emerald-500 to-teal-500 opacity-70 blur-md transition-opacity duration-300 group-hover:opacity-100"></div>
+        <img
+          src={avatar}
+          alt="avatar"
+          className="relative w-42 h-42 rounded-full object-cover ring-4 ring-zinc-900 shadow-xl transition-transform duration-300 group-hover:scale-105"
+        />
+      </div>
       <h1 className="w-full text-white text-lg">{t('name')}</h1>
-      <TypeEffect sequence={['Frontend Developer', 2000, 'React.js/Next.js', 2000, '', 500]} />
+      <TypeEffect sequence={['Web Developer', 2000, 'React.js/Node.js', 2000, '', 500]} />
     </div>
     <div className="w-[55%] border-1 border-gray-800 mt-8"></div>
     <ul className="w-full flex flex-col justify-center items-center gap-4 mt-10 max-sm:w-[50%]">
       <li className="w-[65%] flex flex-row justify-between gap-2 text-white whitespace-nowrap max-sm:justify-center">
-        {t('Time-zone')} <span>GMT+4</span>
+        {t('Time-zone')} <span>GMT+3</span>
       </li>
       <li className="w-[65%] flex flex-row justify-between text-white">
-        {t('Age')} <span>27</span>
+        {t('Age')} <span>28</span>
       </li>
     </ul>
     <div className="w-[80%] mb-5 grid grid-cols-3 gap-4 mt-10 max-sm:w-[60%]">

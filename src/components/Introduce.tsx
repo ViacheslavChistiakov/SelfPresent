@@ -1,14 +1,14 @@
 import React from 'react'
 import TypeEffect from '../entites/TypeEffect'
 import picture from '../assets/picture.jpg';
-import { CheckCheck, Linkedin, SquarePen, Instagram, Github } from 'lucide-react'
+import { CheckCheck, Send, Linkedin, SquarePen, Instagram, Github } from 'lucide-react'
 import { useTranslation } from 'react-i18next';
 
 const Introduce: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="w-full lg:w-full h-[10%] mx-auto flex rounded-[10%] flex flex-col relative right-35 lg:w-[30%] left-1 max-sm:w-full flex justify-center">
+    <div className="w-full lg:w-full h-[680px] mx-auto flex rounded-[10%] flex flex-col relative right-35 lg:w-[30%] left-1 max-sm:w-full max-sm:h-auto flex justify-center animate-fade-in">
     <div className="w-full  flex flex-col bg-zinc-900 rounded-[10%] p-5 gap-6">
         <div className="w-full md:w-[50%]  flex flex-row gap-5 justify-center items-center">
           <SquarePen color='white' />
@@ -38,12 +38,19 @@ const Introduce: React.FC = () => {
                 </div>
               </div>
               <button className="w-full h-20 bg-green-800 rounded-3xl shadow-lg transition-all duration-300 hover:bg-green-500 hover:border-green-400 relative flex items-center justify-center text-center max-sm:rounded-full w-full h-[4rem] ">
-                  <Linkedin color='white' />
-                  <a href="https://www.linkedin.com/in/vycheslav-chistiakov-045228265/" className="text-white pl-5 text-lg text-center  uppercase lg:text-sm md:text-sm">{t("Connect with me")}</a>
+                  <Send color='white' />
+                  <a href="https://t.me/hudozhnik4life" className="text-white pl-5 text-lg text-center  uppercase lg:text-sm md:text-sm">{t("Connect with me")}</a>
                 </button>
             </div>
             <div className="w-full md:w-[50%] flex flex-col h-auto max-sm:w-full">
-              <img src={picture} alt="picture" />
+              <div className="relative group">
+                <div className="absolute -inset-1 rounded-[10%] bg-gradient-to-tr from-green-400 via-emerald-500 to-teal-500 opacity-70 blur-md transition-opacity duration-300 group-hover:opacity-100"></div>
+                <img
+                  src={picture}
+                  alt="picture"
+                  className="relative w-full rounded-[10%] object-cover ring-4 ring-zinc-900 shadow-xl transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
               <ul className="w-full flex flex-col items-center justify-center gap-4 mt-10">
                     <li className="w-full flex flex-row justify-start gap-2 text-white">
                       <Instagram color='white' />
